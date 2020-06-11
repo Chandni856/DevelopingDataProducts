@@ -13,7 +13,7 @@ shinyUI(pageWithSidebar(
                 multiple = FALSE,selected="USA"),
                 conditionalPanel(
                         condition = "input.country == 'USA'",
-                        p("If you live in USA, please choose a state"),
+                        p("If you live in USA, please choose  state"),
                         selectInput(inputId="state", label="State", choices=state.name,
                         multiple = FALSE,selected=NULL)),
                 actionButton("goButton", "Go!"),
