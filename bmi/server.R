@@ -5,7 +5,7 @@ BMI<-function(wght,hght) {
 classBMI<-function(bmic) {
         if (is.na(bmic)) return ("")
         else {
-                if (bmic<18.5) return("Your BMI is less than 18.5 you are considered UNDERWEIGHT") 
+                if (bmic<18.5) return("Your BMI is less than 18.5 you are considered UNDERWEIGHT:") 
                 if (bmic>=8.5 & bmic<24.9) return("Your BMI is in range 18.5 to 24.9 you are in HEALTHY WEIGHT RANGE")
                 if (bmic>=25 & bmic<29.9) return("Your BMI is in range 25 to 29.9 you are OVERWEIGHT")
                 if (bmic>=30) return("Your BMI is higher than 30 you are OBESE")
